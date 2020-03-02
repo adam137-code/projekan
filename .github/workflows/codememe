@@ -1,0 +1,9 @@
+hasil = ""
+for baris in range(0,7):
+    for kolom in range(0,7):
+        if ((kolom == 1 or kolom == 5)and baris != 6) or (baris == 6 and (1<kolom<5)):
+            hasil += "*"
+        else:
+            hasil += " "
+    hasil += "\n"
+print(hasil)
